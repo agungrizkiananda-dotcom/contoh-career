@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karier — PT Contoh Maju Jaya</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="badge-demo">
+  ⚠️ Ini adalah TEMPLATE LATIHAN. "PT Contoh Maju Jaya" adalah perusahaan fiktif. Form ini tidak mengirim data ke mana pun — hanya contoh tata letak HTML.
+</div>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="logo-mark">CM</span>
+    PT Contoh Maju Jaya
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Beranda</a>
+    <a href="careers.html" class="active">Karier</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Formulir Lamaran Kerja</h1>
+  <p>Lengkapi data di bawah ini untuk mengikuti proses rekrutmen (contoh tata letak).</p>
+</section>
+
+<main>
+  <form onsubmit="return false;">
+
+    <div class="card">
+      <h2><span class="step-num">1</span> Data Pribadi</h2>
+
+      <label for="nama">Nama Lengkap *</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="tempat_lahir">Tempat Lahir *</label>
+      <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+
+      <label for="tanggal_lahir">Tanggal Lahir *</label>
+      <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+
+      <label for="alamat">Alamat Domisili *</label>
+      <textarea id="alamat" name="alamat" required></textarea>
+    </div>
+
+    <div class="card">
+      <h2><span class="step-num">2</span> Pendidikan &amp; Pengalaman</h2>
+
+      <label for="pendidikan">Pendidikan Terakhir *</label>
+      <select id="pendidikan" name="pendidikan" required>
+        <option value="">Pilih pendidikan terakhir</option>
+        <option>SMA/SMK</option>
+        <option>D3</option>
+        <option>S1</option>
+        <option>S2</option>
+      </select>
+
+      <label for="sekolah">Nama Sekolah / Universitas *</label>
+      <input type="text" id="sekolah" name="sekolah" required>
+
+      <label for="posisi">Posisi yang Dilamar *</label>
+      <select id="posisi" name="posisi" required>
+        <option value="">Pilih posisi</option>
+        <option>Operator Produksi</option>
+        <option>Quality Control</option>
+        <option>Staff Administrasi</option>
+      </select>
+
+      <label>Pengalaman Kerja *</label>
+      <div class="radio-group">
+        <label><input type="radio" name="pengalaman" value="sudah" required> Sudah Pernah Bekerja</label>
+        <label><input type="radio" name="pengalaman" value="belum"> Belum Pernah Bekerja</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="step-num">3</span> Kontak</h2>
+
+      <label for="whatsapp">Nomor WhatsApp Aktif *</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxxxx" required>
+
+      <label for="email">Email Aktif *</label>
+      <input type="email" id="email" name="email" required>
+
+      <div class="consent">
+        <input type="checkbox" id="consent" required>
+        <label for="consent" style="margin:0;font-weight:400;">
+          Saya menyatakan bahwa data yang saya masukkan adalah contoh/latihan dan bukan data pribadi sungguhan.
+        </label>
+      </div>
+
+      <p class="notice">
+        Form ini adalah contoh statis (tidak terhubung ke server/database apa pun). Untuk form produksi yang sungguhan, tambahkan backend yang aman dan kebijakan privasi yang jelas.
+      </p>
+
+      <button type="submit" class="submit">Kirim (Contoh Saja)</button>
+    </div>
+
+  </form>
+</main>
+
+<footer class="site-footer">
+  © 2026 PT Contoh Maju Jaya (perusahaan fiktif/contoh). Dibuat sebagai template latihan.
+</footer>
+
+</body>
+</html>
